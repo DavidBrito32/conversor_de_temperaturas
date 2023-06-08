@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  flex-wrap: wrap;
+  background-image: url("pngwing.com.png");
+  background-size: cover;
+}
+
+.conversor,
+#Fahrenheit,
+#celsius-kelvin,
+#kelvin-celsius,
+#fahrenheit-kelvin,
+#kelvin-fahrenheit {
+  width: 450px;
+  height: 300px;
+  border: 2px solid black;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 2px 12px 18px black;
+  background-color: rgb(147, 200, 190);
+}
+.conversor h1,
+#Fahrenheit h1,
+#celsius-kelvin h1,
+#celsius-kelvin h1,
+#kelvin-celsius h1,
+#fahrenheit-kelvin h1,
+#kelvin-fahrenheit h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.conversor form,
+#Fahrenheit form,
+#celsius-kelvin form,
+#celsius-kelvin form,
+#kelvin-celsius form,
+#fahrenheit-kelvin form,
+#kelvin-fahrenheit form {
+  border-radius: 8px;
+  width: 90%;
+  height: 30%;
+  margin: 10px auto;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: rgb(22, 199, 158);
+}
+
+.conversor form input[type="number"],
+#Fahrenheit form input[type="number"],
+#celsius-kelvin form input[type="number"],
+#celsius-kelvin form input[type="number"],
+#kelvin-celsius form input[type="number"],
+#fahrenheit-kelvin form input[type="number"],
+#kelvin-fahrenheit form input[type="number"] {
+  width: 30%;
+  line-height: 20px;
+  margin-top: 10px;
+  outline: 0.5px solid black;
+  border-radius: 8px;
+  background-color: rgb(208, 202, 202);
+  padding-left: 12px;
+  color: rgb(7, 19, 95);
+}
+
+.conversor form #converter,
+#Fahrenheit form #converter2,
+#celsius-kelvin form #converter3,
+#kelvin-celsius form #converter4,
+#fahrenheit-kelvin form #converter5,
+#kelvin-fahrenheit form #converter6 {
+  width: 100px;
+  line-height: 20px;
+  border-radius: 8px;
+  outline: 0.5px solid black;
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+.conversor form #converter:hover,
+#Fahrenheit form #converter2:hover,
+#celsius-kelvin form #converter3:hover,
+#kelvin-celsius form #converter4:hover,
+#fahrenheit-kelvin form #converter5:hover,
+#kelvin-fahrenheit form #converter6:hover {
+  background-color: #023e15;
+  color: white;
+  cursor: pointer;
+}
+
+.conversor #resultado,
+#Fahrenheit #resultado2,
+#celsius-kelvin #resultado3,
+#kelvin-celsius #resultado4,
+#fahrenheit-kelvin #resultado5,
+#kelvin-fahrenheit #resultado6 {
+  width: 80%;
+  margin: 0 auto;
+  height: 30px;
+  background-color: #023e15;
+  border-radius: 18px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+}
+
+#resultado,
+#resultado2,
+#resultado3,
+#resultado4,
+#resultado5,
+#resultado6 {
+  display: none;
+}
