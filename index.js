@@ -33,10 +33,9 @@ const kelvinToCelsius = (temperatura4) => {
 };
 
 //converter de kelvin para fahrenheit 5
-const kelvinToFarenheit = (temperatura5) => {
-  temperatura5 = document.querySelector("#temperatura5");
-  const valor = parseFloat(temperatura5.value);
-  const resultado = valor * 1.8 - 459.67;
+const kelvinToFahrenheit = (temperatura) => {
+  const valor = parseFloat(temperatura);
+  const resultado = (valor * 9/5) - 459.67;
   return resultado.toFixed(2);
 };
 
@@ -85,17 +84,20 @@ const clicar4 = () => {
 };
 
 const clicar5 = () => {
-  let imprimir5 = (document.querySelector(
-    "#resultado5"
-  ).innerHTML = `A temperatura em graus Kelvin é: ${farenheitToKelvin()} K°`);
-  const res5 = document.querySelector("#resultado5");
-  res5.style.display = "block";
+  const temperaturaInput = document.querySelector("#temperatura5");
+  const temperatura = temperaturaInput.value;
+  
+  const resultadoFahrenheit = kelvinToFahrenheit(temperatura);
+  
+  const resultadoElement = document.querySelector("#resultado5");
+  resultadoElement.innerHTML = `A temperatura em graus Fahrenheit é: ${resultadoFahrenheit} °F`;
+  resultadoElement.style.display = "block";
 };
 
 const clicar6 = () => {
   let imprimir4 = (document.querySelector(
     "#resultado6"
-  ).innerHTML = `A temperatura em graus Fahrenheit é: ${kelvinToFarenheit()} F°`);
+  ).innerHTML = `A temperatura em graus Fahrenheit é: ${farenheitToKelvin()} F°`);
   const res6 = document.querySelector("#resultado6");
   res6.style.display = "block";
 };

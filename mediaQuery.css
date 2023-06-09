@@ -1,19 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-}
-body {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  flex-wrap: wrap;
-  background-image: url("pngwing.com.png");
-  background-size: cover;
+@media (min-width: 360px) and (max-width: 480px){
+body{
+    font-size: 0.9rem;
 }
 
 .conversor,
@@ -22,7 +9,7 @@ body {
 #kelvin-celsius,
 #fahrenheit-kelvin,
 #kelvin-fahrenheit {
-  width: 450px;
+  width: 90%;
   height: 300px;
   border: 2px solid black;
   margin-top: 20px;
@@ -50,11 +37,11 @@ body {
 #fahrenheit-kelvin form,
 #kelvin-fahrenheit form {
   border-radius: 8px;
-  width: 90%;
+  width: 100%;
   height: 30%;
   margin: 10px auto;
   border: 1px solid black;
-  padding: 20px;
+  padding: 30px;
   background-color: rgb(22, 199, 158);
 }
 
@@ -65,7 +52,7 @@ body {
 #kelvin-celsius form input[type="number"],
 #fahrenheit-kelvin form input[type="number"],
 #kelvin-fahrenheit form input[type="number"] {
-  width: 30%;
+  width: 25%;
   line-height: 20px;
   margin-top: 10px;
   outline: 0.5px solid black;
@@ -81,7 +68,7 @@ body {
 #kelvin-celsius form #converter4,
 #fahrenheit-kelvin form #converter5,
 #kelvin-fahrenheit form #converter6 {
-  width: 100px;
+  width: 80px;
   line-height: 20px;
   border-radius: 8px;
   outline: 0.5px solid black;
@@ -98,6 +85,7 @@ body {
   background-color: #023e15;
   color: white;
   cursor: pointer;
+
 }
 
 .conversor #resultado,
@@ -114,6 +102,8 @@ body {
   color: white;
   font-weight: 700;
   text-align: center;
+  transition: ease-in-out;
+  transition-duration: 1s;
 }
 
 #resultado,
@@ -123,4 +113,8 @@ body {
 #resultado5,
 #resultado6 {
   display: none;
+  transition: ease-in-out;
+  transition-duration: 1s;
+}
+
 }
